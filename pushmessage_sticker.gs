@@ -13,10 +13,10 @@ function pushmessage_sticker() {
     'payload': JSON.stringify({
       'to': DEBUGID, //LINEのユーザIDを指定(取得方法：https://arukayies.com/gas/line_bot/get-userid)
       'messages': [{
-				'type': 'sticker',
-				'packageId': '11538',
-				'stickerId': '51626494'//スタンプリスト：https://developers.line.biz/media/messaging-api/sticker_list.pdf
-			}],
+        'type': 'sticker',
+        'packageId': '11538',
+        'stickerId': '51626494'//スタンプリスト：https://developers.line.biz/media/messaging-api/sticker_list.pdf
+      }],
       'notificationDisabled': false // trueだとユーザーに通知されない
     }),
   });
